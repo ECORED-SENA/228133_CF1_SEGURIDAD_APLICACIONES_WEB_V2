@@ -1,14 +1,14 @@
 .banner-principal-decorativo
   &-1
-    animation: float1 3.5s ease-in-out infinite alternate
+    animation: float1 4s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 35%
+    right: 72%
   &-2
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: float1 3s ease-in-out infinite alternate
     position: absolute
-    top: 51%
-    right: 30%
+    top: 52%
+    right: 3%
 
 
 @keyframes float1
@@ -17,3 +17,410 @@
 
   100%
     transform: translateY(0px)
+
+///tema1
+
+.crd
+  &.brd--rad
+    border-radius: 20px 
+  &.crd--grayGrad
+    padding: 2rem
+    height: 404px
+    background: linear-gradient(180deg, #294DDC 55%, #E5EAFF 45%)
+    border-radius: 0px    
+    &:hover      
+      background: linear-gradient(180deg, #6ACEAE 55%, #CBEEE3 45%)
+      h4, p
+        color: black
+  &.crd--blue
+    background-color: #B1DBEA
+
+  &.crd--border
+    border: 4px solid $color-acento-botones
+    border-radius: 20px
+
+.bottomCircle
+  position: relative
+  & > *
+    position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 115px
+    height: 115px
+    border-radius: 999px
+
+.img90
+  width: 105px  
+
+.clr--gris
+  background-color: #f3f3f3
+  width: auto
+
+.cajon-b:before 
+  content: ''
+  display: block
+  position: absolute
+  opacity: .35
+  top: 0
+  left: 0
+  right: 82%
+  bottom: 62%
+
+.tarjeta-color
+  background-color: #E5FDF3
+
+.tarjeta.color-acento-contenido--borde
+  background-color: #FDFCFC
+  color: #12263F
+  border: solid 3px #CBEEE3
+
+.clr-1
+  background-color: #A6E6CA
+  width: auto
+  border-radius: 0px
+
+.clr-2
+  background-color: #E5FDF3
+  width: 925px
+
+.clr--gris1
+  background-color: #F6F6F6
+  border-radius: 0px
+
+.color-info
+  background-color: #FFFFFF 
+  border-radius: 0px
+
+.img-infografica__item__dot:before, .img-infografica__item__dot:after, .img-infografica-b__item__dot:before, .img-infografica-b__item__dot:afte
+  content: ''
+  display: block
+  width: 100%
+  height: 100%
+  border-radius: 50%
+  position: absolute
+  top: 0
+  left: 0
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out
+  opacity: 100%
+
+
+.img-infografica.color-secundario .img-infografica__item__dot:before, .img-infografica.color-secundario .img-infografica__item__dot:after, .img-infografica.color-secundario .img-infografica-b__item__dot:before, .img-infografica.color-secundario .img-infografica-b__item__dot:after, .img-infografica-b.color-secundario .img-infografica__item__dot:before, .img-infografica-b.color-secundario .img-infografica__item__dot:after, .img-infografica-b.color-secundario .img-infografica-b__item__dot:before, .img-infografica-b.color-secundario .img-infografica-b__item__dot:after
+  background-color: #ffffff48
+  opacity: 0%
+
+.color-amarillo
+  background-color: #FFFAEF
+  border-radius: 20px
+  height: 200px
+  @media (max-width: 997px)
+    height: 100%
+
+.tabs-c.color-acento-contenido .tabs-c__tab--active
+  border-bottom-color: #6ACEAE !important
+  font-weight: bold
+
+.img1
+  width: 240px
+  @media (max-width: 1000px)
+    width: auto
+
+.crd--avatarHorizontal
+  position: relative
+  padding-right: 4rem
+  & > *
+    position: relative
+  p 
+    margin-bottom: 0
+  &::before  
+    position: absolute 
+    content: ''
+    top: 0
+    right: +10em
+    width: calc( 100% - 12%)
+    height: 100%
+    background-color: #E5FDF3
+    border-radius: 20px
+  @media (max-width: 1000px)
+    position: relative
+    padding-right: 2rem
+    & > *
+      position: relative
+    p 
+      margin-bottom: 0
+    &::before  
+      position: absolute 
+      content: ''
+      top: 0
+      right: +10em
+      width: calc( 78%)
+      height: 100%
+      background-color: #E5FDF3
+      border-radius: 20px
+  @media (max-width: 770px)
+    position: relative
+    padding-right: 2rem
+    & > *
+      position: relative
+    p 
+      margin-bottom: 0
+    &::before  
+      position: absolute 
+      content: ''
+      top: 0
+      right: - 0.5em
+      width: calc( 105%)
+      height: 100%
+      background-color: #E5FDF3
+      border-radius: 20px
+
+.crd--avatarHorizontal2
+  position: relative
+  padding-right: 4rem
+  & > *
+    position: relative
+  p 
+    margin-bottom: 0
+  &::before  
+    position: absolute 
+    content: ''
+    top: 0
+    right: +3em
+    width: calc( 100% - 12%)
+    height: 100%
+    background-color: #E5EAFF
+    border-radius: 20px
+  @media (max-width: 999px)
+    position: relative
+    padding-right: 2rem
+    & > *
+      position: relative
+    p 
+      margin-bottom: 0
+    &::before  
+      position: absolute 
+      content: ''
+      top: 0
+      right: +1em
+      width: calc( 78%)
+      height: 100%
+      background-color: #E5EAFF
+      border-radius: 20px
+  @media (max-width: 770px)
+    position: relative
+    padding-right: 2rem
+    & > *
+      position: relative
+    p 
+      margin-bottom: 0
+    &::before  
+      position: absolute 
+      content: ''
+      top: 0
+      right: - 0.5em
+      width: calc( 105%)
+      height: 100%
+      background-color: #E5EAFF
+      border-radius: 20px
+
+.color-cuadro
+  background-color: #FFFDF8
+  border-radius: 20px
+  border: 2px solid
+
+.tarjeta.color-cuadro
+  border-color: #ECC153
+
+.slyder-a__tipo-b .slyder-a__btn--atrs
+  background-color: #6ACEAE
+
+.slyder-a__tipo-b .slyder-a__btn--sigt
+  background-color: #6ACEAE
+
+.slyder-a__btn--sigt, .slyder-a__btn--atrs  
+  border: none
+
+.slyder-a__bullets__item--active
+  background-color: #6ACEAE !important
+  border: none
+
+.slyder-a__bullets__item
+  background-color: #B0C0D2
+
+///tema2
+
+.tarjeta-color1
+  background-color: #F6F6F6
+  border-radius: 0px
+
+.anch
+  width: 89px  
+
+.bg--a-1
+  background-color: #E5EAFF
+
+.hoverScale
+  transition: transform .3s ease-in
+  &:hover
+    transform: scale(1.1)
+.hoverScale2
+  transition: all .3s ease-in
+  &:hover
+    transform: scale(1.1)
+    background-color: #A6E6CA
+
+.tarjeta.acordeonA
+  background-color: #FFE59F
+.acordion__accion__btn--a
+  background-color: #FFFFFF !important
+
+.acordion__activo
+  background-color: #FFE59F !important
+
+.tarjeta-azul
+  background-color: #FFF1CC
+
+.tarjeta.color-ama
+  background: linear-gradient(0deg, #FFF4D6 65%, #F3C035 45%);
+  border-radius: 0px
+  @media (max-width: 999px)
+    background: linear-gradient(0deg, #FFF4D6 56%, #F3C035 45%);
+  @media (max-width: 576px)
+    background: linear-gradient(0deg, #FFF4D6 66%, #F3C035 45%);
+
+.tarjeta.color-ver
+  background: linear-gradient(0deg, #E5FDF3 65%, #6ACEAE 45%);
+  border-radius: 0px
+  @media (max-width: 999px)
+    background: linear-gradient(0deg, #E5FDF3 54%, #6ACEAE 45%);
+  @media (max-width: 576px)
+    background: linear-gradient(0deg, #E5FDF3 62%, #6ACEAE 45%);
+
+.tarjeta.color-az
+  background: linear-gradient(0deg, #E5EAFF 65%, #294DDC 45%);
+  border-radius: 0px
+  @media (max-width: 999px)
+    background: linear-gradient(0deg, #E5EAFF 49%, #294DDC 45%);
+
+.tarjeta.tarjeta-ama
+  background-color: #FFFAEF
+
+.tarjeta.color--gris
+  background-color: #F6F6F6
+  color: #E8E8E8
+  border-radius: 0px
+  border: 1px solid
+  margin-top: -15px
+
+.color-gris
+  background-color: #F6F6F6
+  border-radius: 0px
+
+.anexo *
+  line-height: 1.2
+  color: #0F1E52
+
+.anexo
+  display: block
+  background-color: #F6F6F6
+  position: relative
+  margin-left: 30px
+  padding: 20px
+  padding-left: 50px
+  white-space: normal
+  text-align: left
+  border-radius: 10px
+  top: -30px
+
+.cajon-b.color-acento-contenido:before 
+  background-color: #6ACEAE
+  content: ''
+  display: block
+  position: absolute
+  opacity: .35
+  top: 0
+  left: 78%
+  right: 2%
+  bottom: 72%
+
+
+.color-titulo
+  background-color: #F3C035
+  border-radius: 0px
+
+.tarjeta.color-fondo
+  background: linear-gradient(0deg, #111F4F, #2E52D4);
+  width: calc( 100% + 6rem)
+  margin: 0 -3rem
+  border-radius: 0px
+
+.lista-ol1--cuadro li
+  display: flex
+
+.lista-ol1--cuadro__vineta span
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  line-height: 1em
+
+.lista-ol1--cuadro__vineta 
+  background-color: #F3C035
+  display: inline-block
+  min-width: 24px
+  height: 24px
+  color: #12263F
+  position: relative
+  margin-right: 8px
+
+///
+
+.lista-ol2--cuadro li
+  display: flex
+
+.lista-ol2--cuadro__vineta span
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  line-height: 1em
+
+.lista-ol2--cuadro__vineta 
+  background-color: #0F1E52
+  display: inline-block
+  min-width: 24px
+  height: 24px
+  color: #fff
+  position: relative
+  margin-right: 8px
+
+///
+
+.lista-ol3--cuadro li
+  display: flex
+
+.lista-ol3--cuadro__vineta span
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  line-height: 1em
+
+.lista-ol3--cuadro__vineta 
+  background-color: #F3C035
+  display: inline-block
+  min-width: 24px
+  height: 24px
+  color: #12263F
+  position: relative
+  margin-right: 8px
+
+.color-prima
+  background-color: #12263F
+  border-radius: 0px
+
+.lineagris
+  background-color: #D1D1D1
