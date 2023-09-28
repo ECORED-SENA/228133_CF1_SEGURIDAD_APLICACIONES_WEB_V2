@@ -359,13 +359,13 @@
         .tarjeta.clr--gris1
           .p-4
             .row.justify-content-center.align-items-center
-              .col-lg-7.col-md-12.col-12
-                ImagenInfografica.color-secundario
+              .col-12
+                ImagenInfografica.color-primario
                   template(v-slot:imagen)
                     figure
-                      img.mb-0(src='@/assets/curso/tema1/info1.svg', alt='')
+                      img.img-a.img-t.mb-0(src='@/assets/curso/tema1/info1.svg', alt='')
 
-                  .tarjeta.color-info.p-5(x="71%" y="9%" numero="")
+                  .tarjeta.color-info.p-5(x="69%" y="9%" numero="+")
                     ol.lista-ol--cuadro
                       li 
                         .lista-ol--cuadro__vineta
@@ -396,7 +396,7 @@
                           span 7
                         | Generar SoA.
 
-                  .tarjeta.color-info.p-5(x="72%" y="78%" numero="")
+                  .tarjeta.color-info.p-5(x="69%" y="78%" numero="+")
                     ol.lista-ol1--cuadro
                       li 
                         .lista-ol1--cuadro__vineta
@@ -415,7 +415,7 @@
                           span 11
                         | Administración de cambio.
 
-                  .tarjeta.color-info.p-5(x="16%" y="78%" numero="")
+                  .tarjeta.color-info.p-5(x="30%" y="78%" numero="+")
                     ol.lista-ol2--cuadro
                       li.mb-2 
                         .lista-ol2--cuadro__vineta
@@ -434,7 +434,7 @@
                           span 15
                         | Revisiones técnicas.
 
-                  .tarjeta.color-info.p-5(x="17%" y="9%" numero="")
+                  .tarjeta.color-info.p-5(x="30%" y="9%" numero="+")
                     ol.lista-ol3--cuadro
                       li.mb-2
                         .lista-ol3--cuadro__vineta
@@ -596,71 +596,50 @@
     p.mb-4(data-aos="fade-right") Este estándar aplica para la industria del desarrollo de <i>software,</i> así como para las organizaciones que realizan desarrollos propios para gestionar su información, es así como esta norma busca mejorar la calidad en los productos de desarrollo de <i>software</i> a partir de las siguientes características:
 
     .row.mb-4(data-aos="fade")
-      .col-md-12
-        TabsA.color-acento-contenido.mb-5
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Adecuación funcional del <i>software</i>")
-            h5 Adecuación funcional del <i>software</i>
+      .col-md-8
+        AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta-azul")
+          .row(titulo="Adecuación funcional del <i>software</i>")
+
             p El sistema satisface las necesidades declaradas cuando se utiliza en condiciones específicas.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Eficiencia del desempeño del <i>software</i>")
-            h5 Eficiencia del desempeño del <i>software</i>
+
+          .row(titulo="Eficiencia del desempeño del <i>software</i>")
+
             p.mb-4 También conocido como <em>performance</em>, se debe evaluar el producto <em>software</em> ante diferentes escenarios, por ejemplo: volumen, carga, estrés, escalabilidad y rendimiento.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Compatibilidad")
-            h5 Compatibilidad 
+
+          .row(titulo="Compatibilidad")
+
             p Necesidad del producto final para funcionar ante diferentes características de <i>software</i> y <i>hardware</i>.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
-  
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Usabilidad ")
-            h5 Usabilidad 
-            p Donde entra en juego la interfaz y experiencia de usuario para aprender a usar rápidamente el <i>software</i>.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
-             
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Confiabilidad")
-            h5 Confiabilidad
-            p Se basa en evaluar la capacidad del sistema para trabajar sin fallas durante un periodo de tiempo específico en un entorno específico.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Seguridad")
-            h5 Seguridad 
-            p Nos ayuda a analizar y verificar la seguridad de nuestro producto <i>software</i> mediante diferentes pruebas como: pruebas de penetración, vulnerabilidad, <i>ethical hacking</i> o <i>static analysis</i>.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
   
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Mantenibilidad")
-            h5 Mantenibilidad
+          .row(titulo="Usabilidad ")
+
+            p Donde entra en juego la interfaz y experiencia de usuario para aprender a usar rápidamente el <i>software</i>.
+
+             
+          .row(titulo="Confiabilidad")
+
+            p Se basa en evaluar la capacidad del sistema para trabajar sin fallas durante un periodo de tiempo específico en un entorno específico.
+
+
+          .row(titulo="Seguridad")
+
+            p Nos ayuda a analizar y verificar la seguridad de nuestro producto <i>software</i> mediante diferentes pruebas como: pruebas de penetración, vulnerabilidad, <i>ethical hacking</i> o <i>static analysis</i>.
+
+  
+          .row(titulo="Mantenibilidad")
+
             p El sistema debe ser fácil de mantener, analizarlo, cambiarlo y probarlo. 
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
+
     
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Portabilidad")
-            h5 Portabilidad
+          .row(titulo="Portabilidad")
+
             p Esto se refiere a la capacidad que tiene el producto <i>software</i> para cambiar entre versiones de un sistema operativo a otro sin mayores complicaciones.
-            .row.justify-content-center  
-              .col-md-5
-                figure
-                  img(src='@/assets/curso/tema1/calidad.svg', alt='')
+
+      .col-md-4
+        figure
+          img(src='@/assets/curso/tema1/calidad.svg', alt='')
 
     p.mb-4(data-aos="fade-right") Esto fortalece los procesos de desarrollo de <i>software</i> dentro las organizaciones y en los procesos de desarrollo en sitio en las organizaciones, que buscan mejorar los niveles de seguridad.
     p.mb-4(data-aos="fade-right") Para reforzar esta temática, se sugiere observar el siguiente video.

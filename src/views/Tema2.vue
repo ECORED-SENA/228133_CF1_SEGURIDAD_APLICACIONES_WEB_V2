@@ -29,7 +29,7 @@
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/1.png' )
           .row.align-items-center.mb-2.justify-content-center
-            .col-auto
+            .col-12
               .tarjeta.color-prima.p-3.mb-4
                 h4.text-center.text-white.mb-0 Probador/Auditor 
           p Quien realiza las pruebas y validaciones.
@@ -39,7 +39,7 @@
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/2.png' )
           .row.align-items-center.mb-2.justify-content-center
-            .col-auto
+            .col-12
               .tarjeta.color-prima.p-3.mb-4
                 h4.text-center.text-white.mb-0 Herramientas y metodología  
           p Guía de pruebas de OWASP.
@@ -49,7 +49,7 @@
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/3.png' )
           .row.align-items-center.mb-2.justify-content-center
-            .col-auto
+            .col-12
               .tarjeta.color-prima.p-3.mb-4
                 h4.text-center.text-white.mb-0 Aplicación 
           p Objeto que se desea probar.
@@ -71,12 +71,12 @@
             h4 Pruebas pasivas
             p Esto puede indicar un formulario de autenticación donde la aplicación solicita un nombre de usuario y una contraseña.
 
-            p.mb-5 Los siguientes parámetros representan dos puntos de acceso a la aplicación: 
-            a.anexo.mb-3.mb-lg-0(href="https://www.example.com/appx?a=1&b=1" target="_blank")
-              .anexo__icono
-                img(src="@/assets/template/icono-link.png")
-              .anexo__texto
-                p https://www.example.com/appx?a=1&b=1
+            p Los siguientes parámetros representan dos puntos de acceso a la aplicación: 
+            .row.justify-content-center
+              .col-auto.bgw.p-3.mb-4.px-4.brad
+                a(href="https://www.example.com/appx?a=1&b=1" target="_blank")
+                  .anexo__texto
+                    h5.mb-0 https://www.example.com/appx?a=1&b=1
      
 
             p En este caso, la aplicación muestra dos puntos de acceso (parámetros y).
