@@ -1,9 +1,9 @@
 export default {
   global: {
     componenteFormativo:
-      'Metodologías, normas y estándares de seguridad orientada a aplicaciones <em>web</em>',
+      'Metodologías, normas y estándares de seguridad orientada a aplicaciones web',
     descripcionCurso:
-      'En este componente se presentan los fundamentos necesarios para el desarrollo de una auditoría de la seguridad en aplicaciones <em>web</em>, mediante el reconocimiento de estándares, metodologías, técnicas y herramientas necesarias para la evaluación de la seguridad.',
+      'En este componente se presentan los fundamentos necesarios para el desarrollo de una auditoría de la seguridad en aplicaciones web, mediante el reconocimiento de estándares, metodologías, técnicas y herramientas necesarias para la evaluación de la seguridad.',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.png'),
     imagenesDecorativasBanner: [
@@ -32,71 +32,62 @@ export default {
       },
       {
         nombreRuta: 'tema1',
-        icono: 'far fa-file-alt',
+
         numero: '1',
-        titulo: 'Fundamentos de seguridad en aplicaciones <em>web</em>',
+        titulo: 'Fundamentos de seguridad en aplicaciones web',
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '1.1',
             titulo: 'Conceptos',
             hash: 't_1_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.2',
-            titulo: 'Infraestructura de aplicaciones <em>web</em>',
+            titulo: 'Infraestructura de aplicaciones web',
             hash: 't_1_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.3',
             titulo: 'Normatividad y estándares para la gestión de la seguridad',
             hash: 't_1_3',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '1.4',
             titulo:
-              'Metodologías para la gestión de la seguridad en aplicaciones <em>web</em>',
+              'Metodologías para la gestión de la seguridad en aplicaciones web',
             hash: 't_1_4',
           },
         ],
       },
       {
         nombreRuta: 'tema2',
-        icono: 'far fa-file-alt',
+
         numero: '2',
-        titulo: 'Vulnerabilidades en aplicaciones <em>web</em>',
+        titulo: 'Vulnerabilidades en aplicaciones web',
         desarrolloContenidos: true,
         subMenu: [
           {
-            icono: 'far fa-file-alt',
             numero: '2.1',
             titulo: 'Metodologías para la gestión de vulnerabilidades',
             hash: 't_2_1',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.2',
             titulo: 'Fundamentos de <em>pentesting</em>',
             hash: 't_2_2',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.3',
             titulo: 'OWASP: top 10 de vulnerabilidades',
             hash: 't_2_3',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.4',
             titulo: 'Herramientas especializadas',
             hash: 't_2_4',
           },
           {
-            icono: 'far fa-file-alt',
             numero: '2.5',
             titulo: 'Análisis de resultados',
             hash: 't_2_5',
@@ -206,7 +197,7 @@ export default {
     },
     {
       referencia:
-        'Incibe. (2022). Top 10 vulnerabilidades <em>web</em> de 2021. Incibe.',
+        'Incibe. (2022). Top 10 vulnerabilidades web de 2021. Incibe.',
       link:
         'https://www.incibe.es/protege-tu-empresa/blog/top-10-vulnerabilidades-web-2021',
     },
@@ -231,11 +222,11 @@ export default {
       referencia:
         'MinTIC. (2020) Anexo 3 - Resolución MinTIC 1519 del 2020, Condiciones mínimas técnicas y de seguridad digital.',
       link:
-        'https://gobiernodigital.mintic.gov.co/692/articles-160770_Condiciones_minimas.pdf',
+        'https://gobiernodigital.mintic.gov.co/692/articles-178659_Condiciones_minimas.pdf',
     },
     {
       referencia:
-        'Ortega, C., J. M. (2018). Seguridad en aplicaciones <em>web</em> Java. RA-MA Editorial.',
+        'Ortega, C., J. M. (2018). Seguridad en aplicaciones web Java. RA-MA Editorial.',
       link:
         'https://elibro-net.bdigital.sena.edu.co/es/ereader/senavirtual/106511',
     },
@@ -261,7 +252,7 @@ export default {
           nombre: 'Rafael Neftalí Lizcano Reyes',
           cargo: 'Responsable de Línea de Producción',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
       ],
     },
@@ -299,13 +290,13 @@ export default {
           nombre: 'Juan Daniel Polanco Muñoz',
           cargo: 'Diseñador de Contenidos Digitales',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
           nombre: 'Edward Leonardo Pico Cabra',
           cargo: 'Desarrollador Fullstack',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
           nombre: 'María Natalia Maldonado Delgado',
@@ -382,19 +373,19 @@ export default {
           nombre: 'Zuleidy María Ruiz Torres',
           cargo: 'Validador de Recursos Educativos Digitales',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
           nombre: 'Luis Gabriel Urueta Alvarez',
           cargo: 'Validador de Recursos Educativos Digitales',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
         {
           nombre: 'Daniel Ricardo Mutis Gómez',
           cargo: 'Evaluador para contenidos inclusivos y accesibles',
           centro:
-            'Regional Santander - Centro Industrial del Diseño y la Manufactura',
+            'Centro Industrial del Diseño y la Manufactura - Regional Santander',
         },
       ],
     },

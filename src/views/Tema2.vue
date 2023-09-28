@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 2
-      h1 Vulnerabilidades en aplicaciones <em><em>web</em></em>
+      h1 Vulnerabilidades en aplicaciones web
     .row.justify-content-center.align-items-center.mb-4(data-aos="fade")
       .col-md-10
         .bloque-texto-g.color-acento-botones.p-3.p-sm-4.p-md-5
@@ -19,7 +19,7 @@
     #t_2_1.titulo-segundo.color-acento-contenido(data-aos="fade-right")
       .h2 2.1	Metodologías para la gestión de vulnerabilidades
 
-    p.mb-4(data-aos="fade-right") OWASP propone una metodología para la identificación de vulnerabilidades basada en pruebas de seguridad sobre las aplicaciones <em>web</em>, con el cual se busca encontrar las debilidades presentes en un sistema.
+    p.mb-4(data-aos="fade-right") OWASP propone una metodología para la identificación de vulnerabilidades basada en pruebas de seguridad sobre las aplicaciones web, con el cual se busca encontrar las debilidades presentes en un sistema.
     p.mb-4(data-aos="fade-right") Este modelo de pruebas está conformado por:
 
     .row.mb-4(data-aos="fade")
@@ -28,30 +28,30 @@
           .row 
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/1.png' )
-          .row.align-items-center.mb-2
-            .collgd-8.col-md-12
+          .row.align-items-center.mb-2.justify-content-center
+            .col-auto
               .tarjeta.color-prima.p-3.mb-4
-                h4.text-center.text-white.mb-0 Probador/Auditor: 
+                h4.text-center.text-white.mb-0 Probador/Auditor 
           p Quien realiza las pruebas y validaciones.
       .col-lg-4.mb-4.mb-lg-0.col-md-12.col-12
         .tarjeta.bg--a-1.p-4.d-flex.flex-column.h-100.hoverScale2
           .row 
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/2.png' )
-          .row.align-items-center.mb-2
-            .col-lg-10.col-md-12
+          .row.align-items-center.mb-2.justify-content-center
+            .col-auto
               .tarjeta.color-prima.p-3.mb-4
-                h4.text-center.text-white.mb-0 Herramientas y metodología:  
+                h4.text-center.text-white.mb-0 Herramientas y metodología  
           p Guía de pruebas de OWASP.
       .col-lg-4.mb-4.mb-lg-0.col-md-12.col-12
         .tarjeta.bg--a-1.p-4.d-flex.flex-column.h-100.hoverScale2
           .row 
             .col-lg-3.col-md-2.col-3
               img.mb-3(src='@/assets/curso/tema2/3.png' )
-          .row.align-items-center.mb-2
-            .collgd-6.col-md-12
+          .row.align-items-center.mb-2.justify-content-center
+            .col-auto
               .tarjeta.color-prima.p-3.mb-4
-                h4.text-center.text-white.mb-0 Aplicación: 
+                h4.text-center.text-white.mb-0 Aplicación 
           p Objeto que se desea probar.
     
     P.mb-4(data-aos="fade-right") A su vez, las pruebas se pueden clasificar así:
@@ -61,16 +61,30 @@
         .row
           .col-md-6.mb-4.mb-md-0
             h4 Pruebas pasivas 
-            p El probador intenta comprender la lógica de la aplicación y explora la aplicación <em>web</em> como un usuario. Se pueden utilizar herramientas para la recopilación de información. Por ejemplo, se puede utilizar un <i>proxy</i> HTTP para observar todas las solicitudes y respuestas. Al final de esta fase, el probador generalmente debe comprender todos los puntos de acceso y la funcionalidad del sistema (por ejemplo, encabezados HTTP, parámetros, <i>cookies</i>, API, uso / patrones de tecnología, etc.).
-            .row.justify-content-between.align-items-center
-              .col-auto
-                a.boton.color-acento-botones.indicador__container(@click="modal1 = true")
-                  span Ver más
-                  .indicador--click(v-if="mostrarIndicador")
+            p El probador intenta comprender la lógica de la aplicación y explora la aplicación web como un usuario. Se pueden utilizar herramientas para la recopilación de información. Por ejemplo, se puede utilizar un <i>proxy</i> HTTP para observar todas las solicitudes y respuestas. Al final de esta fase, el probador generalmente debe comprender todos los puntos de acceso y la funcionalidad del sistema (por ejemplo, encabezados HTTP, parámetros, <i>cookies</i>, API, uso / patrones de tecnología, etc.).
+
           .col-md-6
             figure
-              img(src='@/assets/curso/tema2/img2.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/tema2/img2.png', alt='')
+        .row
+          .col-md-6.mb-4.mb-md-0
+            h4 Pruebas pasivas
+            p Esto puede indicar un formulario de autenticación donde la aplicación solicita un nombre de usuario y una contraseña.
 
+            p.mb-5 Los siguientes parámetros representan dos puntos de acceso a la aplicación: 
+            a.anexo.mb-3.mb-lg-0(href="https://www.example.com/appx?a=1&b=1" target="_blank")
+              .anexo__icono
+                img(src="@/assets/template/icono-link.png")
+              .anexo__texto
+                p https://www.example.com/appx?a=1&b=1
+     
+
+            p En este caso, la aplicación muestra dos puntos de acceso (parámetros y).
+
+            p Todos los puntos de entrada encontrados en esta fase representan un objetivo para las pruebas. Hay que realizar un seguimiento del directorio o árbol de llamadas de la aplicación y de todos los puntos de acceso puede ser útil durante las pruebas activas.
+          .col-md-6
+            figure
+              img(src='@/assets/curso/tema2/i1.png', alt='')
         .row
           .col-md-6.mb-4.mb-md-0
             h4 Pruebas activas
@@ -89,7 +103,7 @@
             p.mb-0 12. Pruebas de API.
           .col-md-6
             figure
-              img(src='@/assets/curso/tema2/img3.png', alt='Texto que describa la imagen')
+              img(src='@/assets/curso/tema2/img3.png', alt='')
     
     ModalA(:abrir-modal.sync="modal1")
       .row.align-items-center
@@ -109,21 +123,21 @@
     .row.mb-4(data-aos="fade")
       .col-md-12
         AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta-azul")
-          .row(titulo="Prueba en aplicación <em>web</em>")
+          .row(titulo="Prueba en aplicación web")
             .col-md-9.mb-4.mb-md-0
-              p Es una exploración profunda en una aplicación de tipo <em>web</em>, realizando análisis extremadamente detallados, para identificar vulnerabilidades que pueden poner en riesgo la información.
+              p Es una exploración profunda en una aplicación de tipo web, realizando análisis extremadamente detallados, para identificar vulnerabilidades que pueden poner en riesgo la información.
 
             .col-md-3
               figure
-                img(src='@/assets/curso/tema2/4.png', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/4.png', alt='')
 
-          .row(titulo="Prueba de Client Side")
+          .row(titulo="Prueba de <i>Client Side</i>")
             .col-md-9.mb-4.mb-md-0
-              p En este tipo de prueba, es posible analizar <i>software,</i> programas de creación de contenido y <i><em>web</em> browsers</i> (como Chrome, Firefox, Explorer, etc) en ordenadores de los usuarios, para la búsqueda de vulnerabilidades.
+              p En este tipo de prueba, es posible analizar <i>software,</i> programas de creación de contenido y <i>web browsers</i> (como Chrome, Firefox, Explorer, etc) en ordenadores de los usuarios, para la búsqueda de vulnerabilidades.
           
             .col-md-3
               figure
-                img(src='@/assets/curso/tema2/5.png', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/5.png', alt='')
 
           .row(titulo="Prueba en red inalámbrica")
             .col-md-9.mb-4.mb-md-0
@@ -131,7 +145,7 @@
           
             .col-md-3
               figure
-                img(src='@/assets/curso/tema2/6.png', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/6.png', alt='')
 
           .row(titulo="Prueba de Ingeniería Social")
             .col-md-9.mb-4.mb-md-0
@@ -139,57 +153,39 @@
           
             .col-md-3
               figure
-                img(src='@/assets/curso/tema2/7.png', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/7.png', alt='')
 
     p.mb-4(data-aos="fade-right") Para cualquiera de los tipos de <i>pentesting,</i> se sugiere un ciclo de vida como se muestra en la siguiente figura, en donde se resalta:
 
     .row.mb-4(data-aos="fade")
-      .col-md-12
-        TabsA.color-acento-contenido.mb-5
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Reconocimiento")
-            .row
-              .col-md-9
-                h5 Reconocimiento: 
-                p Identificar los activos de información, aplicaciones, dispositivos, información de red, credenciales de acceso, información.
-              .col-md-3
-                figure
-                  img(src='@/assets/curso/tema2/img2.jpg', alt='Texto que describa la imagen')
+      .col-md-9
+        AcordionA(tipo="a" clase-tarjeta="tarjeta tarjeta-azul")
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Análisis de vulnerabilidades")
-            .row
-              .col-md-9
-                h5 Análisis de vulnerabilidades:
-                p.mb-4 Realizar mediante la aplicación de técnicas y herramientas especializadas, la búsqueda de posibles vulnerabilidades que pueden afectar un activo de información.
-              .col-md-3
-                figure
-                  img(src='@/assets/curso/tema2/img2.jpg', alt='Texto que describa la imagen')
+          .row(titulo="Reconocimiento")
+            .col-md-9
+              p Identificar los activos de información, aplicaciones, dispositivos, información de red, credenciales de acceso, información.
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Explotación")
-            .row
-              .col-md-9
-                h5 Explotación:
-                p Permite validar si una vulnerabilidad es explotable o puede permanecer en estado inactivo.
-              .col-md-3
-                figure
-                  img(src='@/assets/curso/tema2/img2.jpg', alt='Texto que describa la imagen')
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Escalar privilegios o postexplotación")
-            .row
-              .col-md-9
-                h5 Escalar privilegios o postexplotación:
-                p Permite evaluar los posibles daños que pueden causar si una vulnerabilidad se materializa como amenaza.
-              .col-md-3
-                figure
-                  img(src='@/assets/curso/tema2/img2.jpg', alt='Texto que describa la imagen')
+          .row(titulo="Análisis de vulnerabilidades")
+            .col-md-9
+              p.mb-4 Realizar mediante la aplicación de técnicas y herramientas especializadas, la búsqueda de posibles vulnerabilidades que pueden afectar un activo de información.
 
-          .tarjeta.color-acento-contenido--borde.p-4(titulo="Informe")
-            .row
-              .col-md-9
-                h5 Informe:
-                p Generar el reporte del ejercicio realizado, hallazgos y detalles de las vulnerabilidades encontradas.
-              .col-md-3
-                figure
-                  img(src='@/assets/curso/tema2/img2.jpg', alt='Texto que describa la imagen')
+
+          .row(titulo="Explotación")
+            .col-md-9
+              p Permite validar si una vulnerabilidad es explotable o puede permanecer en estado inactivo.
+
+
+          .row(titulo="Escalar privilegios o postexplotación")
+            .col-md-9
+              p Permite evaluar los posibles daños que pueden causar si una vulnerabilidad se materializa como amenaza.
+
+          .row(titulo="Informe")
+            .col-md-9
+              p Generar el reporte del ejercicio realizado, hallazgos y detalles de las vulnerabilidades encontradas.
+      .col-md-3
+        figure
+          img(src='@/assets/curso/tema2/img2.jpg', alt='')
     
     P.mb-4(data-aos="fade-right") Ahora bien, este ejercicio se puede realizar de manera exploratoria sin conocimiento del escenario e información de acceso, y dependiendo de esto, las pruebas se pueden clasificar en:
 
@@ -220,9 +216,9 @@
     separador
 
     #t_2_3.titulo-segundo.color-acento-contenido(data-aos="fade-right")
-      .h2 2.3 OWASP: top 10 de vulnerabilidades
+      .h2 2.3 OWASP - top 10 de vulnerabilidades
 
-    p.mb-4(data-aos="fade-right") De acuerdo con la comunidad de OWASP, este genera reportes sobre las vulnerabilidades que más se encuentran en las aplicaciones <em>web</em> y en su último reporte se puede observar el siguiente comportamiento del top 10 de las vulnerabilidades identificadas.
+    p.mb-4(data-aos="fade-right") De acuerdo con la comunidad de OWASP, este genera reportes sobre las vulnerabilidades que más se encuentran en las aplicaciones web y en su último reporte se puede observar el siguiente comportamiento del top 10 de las vulnerabilidades identificadas.
 
     SlyderB.mb-5(:datos="datosSlyder")(data-aos="fade-right")
     separador
@@ -237,9 +233,9 @@
         p.mb-4 Dentro del universo de herramientas a utilizar, están las siguientes categorías:
       .col-md-4(data-aos="fade-left")
         figure
-          img(src='@/assets/curso/tema2/img3.jpg', alt='Texto que describa la imagen')
+          img(src='@/assets/curso/tema2/img3.jpg', alt='')
 
-    .row.mb-4(data-aos="fade-right")
+    .row.mb-5(data-aos="fade-right")
       .col-md-12
         ul.lista-ul--color.mb-0
           li 
@@ -247,10 +243,10 @@
             | Herramientas de pruebas de seguridad de aplicaciones estáticas (SAST).
           li 
             i.fas.fa-atom
-            span Herramientas de pruebas dinámicas de seguridad de aplicaciones (DAST), principalmente para aplicaciones <em>web</em>.
+            span Herramientas de pruebas dinámicas de seguridad de aplicaciones (DAST), principalmente para aplicaciones web.
           li 
             i.fas.fa-atom
-            span Herramientas interactivas de pruebas de seguridad de aplicaciones (IAST), principalmente para aplicaciones <em>web</em> y API  <em>web</em>.
+            span Herramientas interactivas de pruebas de seguridad de aplicaciones (IAST), principalmente para aplicaciones web y API  web.
           li 
             i.fas.fa-atom
             | Mantener actualizadas las bibliotecas de código abierto, para evitar el uso de componentes con vulnerabilidades conocidas (OWASP Top 10-2017 A9)
@@ -272,7 +268,7 @@
             .row.tarjeta.color--gris.p-4
               .col-md-6
                 figure
-                  img(src='@/assets/curso/tema2/img5.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/img5.jpg', alt='')
               .col-md-6.mb-4.mb-md-0
                 h4 Escaneo de código de GitHub 
                 p.mb-4 Es un servicio gratuito de análisis estático de código abierto que utiliza GitHub Actions y CodeQL. 
@@ -282,7 +278,7 @@
             .row.tarjeta.color--gris.p-4
               .col-md-6
                 figure
-                  img(src='@/assets/curso/tema2/img6.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/img6.jpg', alt='')
               .col-md-6.mb-4.mb-md-0
                 h4 Análisis estático de Coverity Scan 
                 p.mb-4 Se puede conectar a Travis-CI para que se realice automáticamente con recursos en línea. Soporta más de una docena de lenguajes de programación.
@@ -291,7 +287,7 @@
             .row.tarjeta.color--gris.p-4
               .col-md-6
                 figure
-                  img(src='@/assets/curso/tema2/img7.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/img7.jpg', alt='')
               .col-md-6.mb-4.mb-md-0
                 h4 Reshift
                 p.mb-4 Es una herramienta de CI/CD que utiliza el análisis de código estático para buscar vulnerabilidades y utiliza el aprendizaje automático para dar una predicción sobre falsos positivos. Soporta Java con soporte futuro para NodeJS y JavaScript planeado.  
@@ -300,7 +296,7 @@
             .row.tarjeta.color--gris.p-4
               .col-md-6
                 figure
-                  img(src='@/assets/curso/tema2/img8.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/img8.jpg', alt='')
               .col-md-6.mb-4.mb-md-0
                 h4 WhiteSource Free Tools 
                 p.mb-4 <i>Suite</i> de herramientas para detectar vulnerabilidades en código fuente.
@@ -309,7 +305,7 @@
             .row.tarjeta.color--gris.p-4
               .col-md-6
                 figure
-                  img(src='@/assets/curso/tema2/img9.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/img9.jpg', alt='')
               .col-md-6.mb-4.mb-md-0
                 h4 HCL AppScan CodeSweep 
                 p.mb-4 Esta es una versión de la edición de la comunidad SAST de HCL AppScan. 
@@ -320,7 +316,7 @@
         .tarjeta.clr-1
           h4.text-center.p-2 Herramientas DAST
 
-    p.mb-4(data-aos="fade-right") Si un proyecto tiene un componente de aplicación <em>web</em>, se recomienda ejecutar análisis automatizados contra él para establecer las vulnerabilidades.
+    p.mb-4(data-aos="fade-right") Si un proyecto tiene un componente de aplicación web, se recomienda ejecutar análisis automatizados contra él para establecer las vulnerabilidades.
 
     .row.mb-4(data-aos="fade-up")
       .tarjeta.tarjeta-ama.p-4
@@ -328,20 +324,20 @@
           .row(titulo="OWASP ZAP")
             .col-md-8.mb-4.mb-md-0
               h5 OWASP ZAP
-              p Es una herramienta gratuita y de código abierto con todas las funciones que incluye escaneo automatizado en busca de vulnerabilidades y herramientas para ayudar a los expertos a realizar pruebas manuales de lápiz de aplicaciones <em>web</em>.
+              p Es una herramienta gratuita y de código abierto con todas las funciones que incluye escaneo automatizado en busca de vulnerabilidades y herramientas para ayudar a los expertos a realizar pruebas manuales de lápiz de aplicaciones web.
           
             .col-md-4
               figure
-                img(src='@/assets/curso/tema2/img4.jpg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/i2.png', alt='')
 
           .row(titulo="StackHawk")
             .col-md-8.mb-4.mb-md-0
               h5 StackHawk
-              p Esta es una herramienta con soporte comercial construida sobre OWASP ZAP y optimizada para ejecutarse en CI/CD (casi todos los CI soportados) para probar aplicaciones <em>web</em> durante el desarrollo y en CI/CD. StackHawk es gratuito para proyectos de código abierto y de uso gratuito en una sola aplicación.
+              p Esta es una herramienta con soporte comercial construida sobre OWASP ZAP y optimizada para ejecutarse en CI/CD (casi todos los CI soportados) para probar aplicaciones web durante el desarrollo y en CI/CD. StackHawk es gratuito para proyectos de código abierto y de uso gratuito en una sola aplicación.
           
             .col-md-4
               figure
-                img(src='@/assets/curso/tema2/img4.jpg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/i3.png', alt='')
 
 
           .row(titulo="Arachni – Arachni")
@@ -351,7 +347,7 @@
           
             .col-md-4
               figure
-                img(src='@/assets/curso/tema2/img4.jpg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/i4.png', alt='')
 
           .row(titulo="VWT Digital's Sec-helpers")
             .col-md-8.mb-4.mb-md-0
@@ -360,7 +356,7 @@
           
             .col-md-4
               figure
-                img(src='@/assets/curso/tema2/img4.jpg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/i5.png', alt='')
 
 
           .row(titulo="OWASP Purpleteam")
@@ -370,31 +366,27 @@
           
             .col-md-4
               figure
-                img(src='@/assets/curso/tema2/img4.jpg', alt='Texto que describa la imagen')
+                img(src='@/assets/curso/tema2/i6.png', alt='')
 
     .row.mb-4(data-aos="fade-right")
       .col-lg-3.col-md-6.col-9
         .tarjeta.clr-1
           h4.text-center.p-2 Herramientas IAST
 
-    p.mb-4(data-aos="fade-right") Estas herramientas suelen estar orientadas a analizar aplicaciones <em>web</em> y API <em>web</em>, pero eso es específico del proveedor. Puede haber productos IAST que también realicen un buen análisis de seguridad en aplicaciones que no sean <em>web</em>.
-
-    .titulo-sexto.color-acento-contenido
-      h5 Figura 6
-      span Contrast Community Edition (CE)
+    p.mb-4(data-aos="fade-right") Estas herramientas suelen estar orientadas a analizar aplicaciones web y API web, pero eso es específico del proveedor. Puede haber productos IAST que también realicen un buen análisis de seguridad en aplicaciones que no sean web.
 
     .row.justify-content-center.align-items-center.mb-4(data-aos="fade-up")
       .col-md-8
         .row
           .col-lg-8.col-md-12.col-12
             figure
-              img.mb-0(src='@/assets/curso/tema2/img11.jpg', alt='Texto que describa la imagen')
+              img.mb-0(src='@/assets/curso/tema2/img11.jpg', alt='')
           .col-lg-4.col-md-12.col-12
             .tarjeta.color-gris.p-4
               h5 Contrast Community Edition (CE) 
               p Versión con todas las funciones para 1 aplicación y hasta 5 usuarios (algunas funciones Enterprise deshabilitadas). Contrast CE solo admite Java y .NET.
 
-    p.mb-4(data-aos="fade-right") A continuación podrá conocer algunas de las herramientas disponibles para la auditoría de aplicaciones <em>web</em> y para proyectos de desarrollo de aplicaciones <em>web</em>, y vale la pena  aclarar que algunas de ellas son <i>open source,</i> o tienen una posibilidad de ser utilizados cuando son proyectos abiertos, pero para proyectos comerciales o de gran tamaño requieren de una licencia o contrato de uso.
+    p.mb-4(data-aos="fade-right") A continuación podrá conocer algunas de las herramientas disponibles para la auditoría de aplicaciones web y para proyectos de desarrollo de aplicaciones web, y vale la pena  aclarar que algunas de ellas son <i>open source,</i> o tienen una posibilidad de ser utilizados cuando son proyectos abiertos, pero para proyectos comerciales o de gran tamaño requieren de una licencia o contrato de uso.
 
     .row.mb-4(data-aos="fade-up")
       .col-md-12
@@ -404,12 +396,12 @@
               .col-md-8.mb-4.mb-md-0
                 h4 Herramientas de seguridad de <i>software</i> de código abierto (OSS)
                 p.mb-4 OSS se refiere a las bibliotecas o componentes de código abierto que los desarrolladores de aplicaciones aprovechan para desarrollar rápidamente nuevas aplicaciones y agregar características a las aplicaciones existentes.
-                p.mb-2 Plugin Maven Versions. 
-                p.mb-2 Dependabot.
+                p.mb-2.fst-italic Plugin Maven Versions. 
+                p.mb-2.fst-italic Dependabot.
             
               .col-md-4
                 figure
-                  img(src='@/assets/curso/tema2/vec1.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/vec1.jpg', alt='')
 
           .py-4.py-md-5(titulo="Componentes vulnerables conocidos" :icono="require('@/assets/curso/tema2/icon2.png')")
             .row
@@ -422,7 +414,7 @@
 
               .col-md-4
                 figure
-                  img(src='@/assets/curso/tema2/vec2.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/vec2.jpg', alt='')
 
           .py-4.py-md-5(titulo="Calidad de código" :icono="require('@/assets/curso/tema2/icon3.png')")
             .row
@@ -435,45 +427,46 @@
 
               .col-md-4
                 figure
-                  img(src='@/assets/curso/tema2/vec3.jpg', alt='Texto que describa la imagen')
+                  img(src='@/assets/curso/tema2/vec3.jpg', alt='')
 
           .py-4.py-md-5(titulo="Entornos <i>DevOps/CI</i>" :icono="require('@/assets/curso/tema2/icon4.png')")
             .row
-              .col-md-8.mb-4.mb-md-0
+              .col-md-7.mb-4.mb-md-0
                 h4 Herramientas de seguridad integradas en entornos DevOps/CI
                 p Permiten a las empresas conseguir una mayor eficiencia, productividad y agilidad, conectando diferentes aplicaciones de <i>software</i> y servicios, interfaces de programación de aplicaciones (API) datos y dispositivos para automatizar los procesos empresariales.
-                p.mb-2 Grendel-Scan
-                p.mb-2 Vega
-                p.mb-2 Wapiti
-                .row.justify-content-between.align-items-center
-                  .col-auto
-                    a.boton.color-acento-botones.indicador__container(@click="modal2 = true")
-                      span Ver más
-                      .indicador--click(v-if="mostrarIndicador")
-              .col-md-4
+                ol.lista-ol
+                  li 
+                    span.text-bold a. 
+                    | Grendel-Scan
+                  li 
+                    span.text-bold b. 
+                    | Vega
+                  li 
+                    span.text-bold c. 
+                    | Wapiti
+
+                p.mb-4 Otras herramientas de seguridad gratuitas de código abierto son:
+                ol.lista-ol
+                  li 
+                    span.text-bold a. 
+                    | Skipfish.
+                  li 
+                    span.text-bold b. 
+                    | SQLMap
+                  li 
+                    span.text-bold c. 
+                    | Graber.
+                  li 
+                    span.text-bold d. 
+                    | Ratproxy.
+                  li 
+                    span.text-bold e. 
+                    | Wfuzz.
+              .col-md-5
                 figure
-                  img(src='@/assets/curso/tema2/vec4.jpg', alt='Texto que describa la imagen')
-    ModalA(:abrir-modal.sync="modal2")
-      .row.align-items-center
-        .col-md-12.mb-4.mb-md-0
-          h5 Herramientas de seguridad integradas en entornos <i>DevOps/CI</i>
-          p.mb-4 Otras herramientas de seguridad gratuitas de código abierto son:
-          ol.lista-ol
-            li 
-              span.text-bold a. 
-              | Skipfish.
-            li 
-              span.text-bold b. 
-              | SQLMap
-            li 
-              span.text-bold c. 
-              | Graber.
-            li 
-              span.text-bold d. 
-              | Ratproxy.
-            li 
-              span.text-bold e. 
-              | Wfuzz.
+                  img(src='@/assets/curso/tema2/vec4.png', alt='')
+
+
     separador
    
     #t_2_5.titulo-segundo.color-acento-contenido(data-aos="fade-right")
@@ -481,11 +474,11 @@
 
     .row.justify-content-center.align-items-center.mb-4
       .col-md-8(data-aos="fade-right")
-        p.mb-4 Una vez realizado el plan de pruebas programado con las herramientas y técnicas seleccionadas, se deben documentar los hallazgos encontrados en el ejercicio, para ello se emplean instrumentos que permitan registrar, analizar y evaluar el estado actual de la seguridad de las aplicaciones <em>web</em>.
+        p.mb-4 Una vez realizado el plan de pruebas programado con las herramientas y técnicas seleccionadas, se deben documentar los hallazgos encontrados en el ejercicio, para ello se emplean instrumentos que permitan registrar, analizar y evaluar el estado actual de la seguridad de las aplicaciones web.
         p Desde el proyecto OWASP, se han propuesto varios instrumentos para registrar la información a manera de <em>checklist</em>, a saber:
       .col-md-4(data-aos="fade-left")
         figure
-          img(src='@/assets/curso/tema2/img10.jpg', alt='Texto que describa la imagen')
+          img(src='@/assets/curso/tema2/img10.jpg', alt='')
 
     .row.justify-content-center.mb-4(data-aos="fade-up")
       .col-md-10
@@ -495,17 +488,17 @@
               h5 Figura 7
               span Instrumento <em>checklist</em> para registro de la evaluación.
             figure
-              img.mb-0(src='@/assets/curso/tema2/12.jpg', alt='Texto que describa la imagen')
+              img.mb-0(src='@/assets/curso/tema2/12.jpg', alt='')
           .col-lg-6.col-md-12.col-12
             .tarjeta.color-gris.p-4
               h5 Instrumento <em>checklist</em> para registro de la evaluación
-              p.mb-5 Este permite obtener un informe del riesgo que pueden llegar a presentar una determinada aplicación <em>web</em>, registrando cada una de las aplicaciones <em>web</em> que se desea evaluar, y registrar el resultado de las pruebas practicadas, esta información será útil para generar un informe final del nivel del riesgo presente en las aplicaciones.
+              p.mb-5 Este permite obtener un informe del riesgo que pueden llegar a presentar una determinada aplicación web, registrando cada una de las aplicaciones web que se desea evaluar, y registrar el resultado de las pruebas practicadas, esta información será útil para generar un informe final del nivel del riesgo presente en las aplicaciones.
               .col-md-9
-                a.anexo.mb-4.mb-lg-0(href="https://docs.github.com/es/issues/tracking-your-work-with-issues/about-task-lists" target="_blank")
+                a.anexo.mb-4.mb-lg-0.bgw(href="https://docs.github.com/es/issues/tracking-your-work-with-issues/about-task-lists" target="_blank")
                   .anexo__icono
                     img(src="@/assets/template/icono-link.png")
                   .anexo__texto
-                    p Se encuentra disponible en la url: <b>Master <em>checklist</em></b>
+                    p #[b Enlace web.] <em>Master checklist</em>
 
     .row.justify-content-center.mb-5(data-aos="fade-up")
       .col-md-10
@@ -515,17 +508,17 @@
               h5 Figura 8
               span OWASP Risk Assesment Calculator.
             figure
-              img.mb-0(src='@/assets/curso/tema2/11.jpg', alt='Texto que describa la imagen')
+              img.mb-0(src='@/assets/curso/tema2/11.jpg', alt='')
           .col-lg-6.col-md-12.col-12
             .tarjeta.color-gris.p-4
               h5 Instrument OWASP Risk Assessment Calculator
               p.mb-5 Esta herramienta es una calculadora de evaluación de riesgos OWASP y se puede encontrar un instrumento de evaluación en línea disponible en
               .col-md-9
-                a.anexo.mb-4.mb-lg-0(href="https://javierolmedo.github.io/OWASP-Calculator/" target="_blank")
+                a.anexo.mb-4.mb-lg-0.bgw(href="https://javierolmedo.github.io/OWASP-Calculator/" target="_blank")
                   .anexo__icono
                     img(src="@/assets/template/icono-link.png")
                   .anexo__texto
-                    p Se encuentra disponible en la url: <b>Calculator</b>
+                    p #[b Enlace web.] #[i Calculator]
 
     .row.justify-content-center.align-items-center.mb-4
       .col-md-10
@@ -543,10 +536,10 @@
                     .anexo__icono
                       img(src="@/assets/template/icono-link.png")
                     .anexo__texto
-                      p Este se puede consultar en: <b><em>Web</em> Security Testing Guide</b>
+                      p #[b Enlace web.] <i>web Security Testing Guide</i>
 
     .titulo-sexto.color-acento-contenido(data-aos="fade-right")
-      h5 Figura 10
+      h5 Figura 9
       span Estructura general de un reporte de <i>pentesting</i>
 
     .row.justify-content-center.align-items-center.mb-4
@@ -593,7 +586,7 @@
           .row.justify-content-between.align-items-center
             .col.mb-3.mb-sm-0
               h3.mb-1.text-white Modelo de <em>Pentesting</em>
-              p.text-small.text-white Para realizar una presentación y sustentación ante la organización del ejercicio realizado, y argumentando con detalles y pruebas, las debilidades que presentan y un plan de mejoramiento que permita la reducción de la brecha a la seguridad en aplicaciones <em>web</em>, se puede recurrir al modelo de reporte de <em>pentesting</em>.
+              p.text-small.text-white Para realizar una presentación y sustentación ante la organización del ejercicio realizado, y argumentando con detalles y pruebas, las debilidades que presentan y un plan de mejoramiento que permita la reducción de la brecha a la seguridad en aplicaciones web, se puede recurrir al modelo de reporte de <em>pentesting</em>.
             .col-sm-auto
               a.boton.color-acento-botones(href="https://owasp.org/www-project-web-security-testing-guide/v42/5-Reporting/README" target="_blank")
                 span Ir al enlace
