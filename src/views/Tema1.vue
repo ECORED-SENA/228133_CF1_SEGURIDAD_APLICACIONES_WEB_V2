@@ -646,8 +646,8 @@
 
     figure.mb-5(data-aos="fade")
       .video
-        iframe(width="942" height="530" src="https://www.youtube.com/embed/AuqpvCnsHoY" title="Norma ISO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-    
+        iframe(width="942" height="530" src="https://www.youtube.com/embed/jyQfY4YZwM8?si=IVlK7MFjfjApw14R" title="Norma ISO" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      figcaption Video. Norma ISO
     separador
 
     #t_1_4.titulo-segundo.color-acento-contenido(data-aos="fade-right")

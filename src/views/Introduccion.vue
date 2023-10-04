@@ -12,8 +12,8 @@
     
     figure.mb-5(data-aos="fade-left")
       .video
-        iframe(width="942" height="530" src="https://www.youtube.com/embed/5Nk-Td6QLVw" title="Metodologías, normas y estándares de seguridad orientada a aplicaciones web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
-      figcaption Video. 
+        iframe(width="942" height="530" src="https://www.youtube.com/embed/UFUqpMg9xnk?si=kupc6P6ryn9kxBfC" title="Metodologías, normas y estándares de seguridad orientada a aplicaciones web" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+      figcaption Video. Metodologías, normas y estándares de seguridad orientada a aplicaciones web 
 </template>
 
 <script>
