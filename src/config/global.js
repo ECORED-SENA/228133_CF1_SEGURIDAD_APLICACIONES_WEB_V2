@@ -165,7 +165,7 @@ export default {
     {
       termino: '2FA',
       significado:
-        'término que representa doble factor de autenticación, solución que agrega una capa de seguridad en sistemas de autenticación basados en componentes externos a un sistema, por ejemplo, un token, una aplicación, tarjeta inteligente, etc.',
+        'término que representa doble factor de autenticación, solución que agrega una capa de seguridad en sistemas de autenticación basados en componentes externos a un sistema, por ejemplo, un <i>token</i>, una aplicación, tarjeta inteligente, etc.',
     },
     {
       termino: '<em>Checklist</em>',

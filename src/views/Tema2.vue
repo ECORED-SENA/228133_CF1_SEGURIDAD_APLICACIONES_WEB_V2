@@ -488,7 +488,7 @@
               h5 Figura 7
               span Instrumento <em>checklist</em> para registro de la evaluación.
             figure
-              img.mb-0(src='@/assets/curso/tema2/12.jpg', alt='')
+              img.mb-0(src='@/assets/curso/tema2/12.jpg', alt='Imagen ejemplo de instrumento checklist para registro de la evaluación.')
           .col-lg-6.col-md-12.col-12
             .tarjeta.color-gris.p-4
               h5 Instrumento <em>checklist</em> para registro de la evaluación
@@ -506,9 +506,9 @@
           .col-lg-5.col-md-12.col-12
             .titulo-sexto.color-acento-contenido
               h5 Figura 8
-              span OWASP Risk Assesment Calculator.
+              span OWASP Risk Assessment Calculator.
             figure
-              img.mb-0(src='@/assets/curso/tema2/11.jpg', alt='')
+              img.mb-0(src='@/assets/curso/tema2/11.jpg', alt='Captura del programa Risk Assesment Calculator.')
           .col-lg-6.col-md-12.col-12
             .tarjeta.color-gris.p-4
               h5 Instrument OWASP Risk Assessment Calculator
@@ -626,7 +626,7 @@ export default {
       {
         titulo: 'Diseño inseguro (<i>Insecure Design</i>)',
         texto:
-          'A la hora de desarrollar una aplicación web es primordial incluir la seguridad de la aplicación desde la fase del diseño, centrándose la detección de riesgos relacionados con el diseño y las fallas arquitectónicas, además de dar más fuerza al modelado de amenazas, patrones de diseño seguros y arquitecturas de referencia.',
+          'A la hora de desarrollar una aplicación web es primordial incluir la seguridad de la aplicación desde la fase del diseño, centrándose en la detección de riesgos relacionados con el diseño y las fallas arquitectónicas, además de dar más fuerza al modelado de amenazas, patrones de diseño seguros y arquitecturas de referencia.',
         imagen: require('@/assets/curso/tema2/4.jpg'),
       },
       {

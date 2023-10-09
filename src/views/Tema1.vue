@@ -8,7 +8,7 @@
       h1 Fundamentos de seguridad en aplicaciones web
     .row.justify-content-center.align-items-center.mb-4
       .col-md-9(data-aos="fade-right")
-        p.mb-4 La seguridad de la información en las organizaciones presenta una responsabilidad compartida dada por algunas normas, estándares, implementaciones de cumplimiento legal y algunas iniciativas de buenas prácticas que conllevan a generar una cultura de seguridad en los datos gestionados. 
+        p.mb-4 La seguridad de la información en las organizaciones presenta una responsabilidad compartida dada por algunas normas, estándares, implementaciones de cumplimiento legal y algunas iniciativas de buenas prácticas que lleva a generar una cultura de seguridad en los datos gestionados. 
         p.mb-4 Ahora bien, existe un gran número de este tipo de iniciativas enfocadas a la seguridad perimetral, de procesos, de infraestructura, y no se le da la correspondiente importancia al desarrollo de aplicaciones las cuales son la ventana o interfaz que los usuarios o clientes van a utilizar para acceder y gestionar la información.
         p.mb-4 De acuerdo con lo anterior, a continuación, se reconocerán algunas iniciativas que han surgido y que son muy utilizadas dentro de la seguridad de aplicaciones web.
       .col-md-3(data-aos="fade-left")
@@ -58,20 +58,17 @@
           p.text-center.mb-0 Es la probabilidad de que se produzca un incidente de seguridad, materializándose una amenaza y causando pérdidas o daños.
     
     .row.justify-content-center.align-items-center.mb-4
-      .col-md-10
-        .row.justify-content-center.align-items-center
-          .col-md-8(data-aos="fade-right")
-            .cajon-b.color-acento-botones.p-3
-              p.mb-0 Los anteriores conceptos deben ser comprendidos adecuadamente, pues la presencia de una vulnerabilidad no significa que esté afectando la información, como se observa en la siguiente figura, el riesgo resulta del aprovechamiento de una vulnerabilidad y una amenaza materializada 
-              br
-              br
-              | En el siguiente recurso, se ofrece información en detalle de la relación de otros conceptos, se invita a consultarlo:
-          .col-md-4(data-aos="fade-left")
-            .titulo-sexto.color-acento-contenido(data-aos="fade-right")
-              h5 Figura 1 
-              span Relación de conceptos          
-            figure
-              img(src="@/assets/curso/tema1/img2.svg", alt="Imagen que presenta el riesgo como el punto donde se unen la amenaza, la vulnerabilidad y el sistema de información.")
+      .col-lg-10(data-aos="fade-right")
+        .cajon-b.color-acento-botones.p-3
+          p.mb-0 Los anteriores conceptos deben ser comprendidos adecuadamente, pues la presencia de una vulnerabilidad no significa que esté afectando la información, como se observa en la siguiente figura, el riesgo resulta del aprovechamiento de una vulnerabilidad y una amenaza materializada 
+          br
+          br
+          | En la  siguiente figura, se detalla la relación entre los conceptos:
+      .col-lg-6(data-aos="fade-left")
+        .titulo-sexto.color-acento-contenido(data-aos="fade-right")
+          h5 Figura 1 
+          span Relación de conceptos          
+        img.img-a.img-t(src="@/assets/curso/tema1/img2.svg", alt="Imagen que presenta el riesgo como el punto donde se unen la amenaza, la vulnerabilidad y el sistema de información.")
 
     p.mb-4(data-aos="fade-right") A continuación, se podrán conocer otros conceptos importantes:
 
@@ -88,7 +85,7 @@
         .row
           .col-md-6.mb-4.mb-md-0
             h4   <i>Patch</i>
-            p También conocido como parche, es una pieza de programa adicional que co rrige un <i>bug</i> o adiciona funcionalidades en una aplicación.	
+            p También conocido como parche, es una pieza de programa adicional que corrige un <i>bug</i> o adiciona funcionalidades en una aplicación.	
           .col-md-6
             figure
               img(src='@/assets/curso/tema1/slyder2.png', alt='')
@@ -137,7 +134,7 @@
 
     .row.justify-content-center.align-items-center.mb-4
       .col-md-8(data-aos="fade-right")
-        p.mb-4 Las aplicaciones web han ganado terreno en la adopción e implementación de soluciones para las organizaciones, dada su flexibilidad, compatibilidad, capacidades de gestionar información y sobre todo su rapidez para la implementación dado que requiere de una infraestructura centralizada, esto conlleva a facilitar también su mantenimiento; y, por otra parte, a los usuarios finales les significa accederlas desde cualquier dispositivo haciendo uso de un navegador web y estar conectados a una red local o internet.
+        p.mb-4 Las aplicaciones web han ganado terreno en la adopción e implementación de soluciones para las organizaciones, dada su flexibilidad, compatibilidad, capacidades de gestionar información y sobre todo su rapidez para la implementación dado que requiere de una infraestructura centralizada, esto lleva a facilitar también su mantenimiento; y, por otra parte, a los usuarios finales les significa accederlas desde cualquier dispositivo haciendo uso de un navegador web y estar conectados a una red local o internet.
         p.mb-4 En el siguiente recurso se presentan algunos de los componentes que integran una infraestructura de aplicaciones web, lo cual servirá para comprender mejor su funcionamiento:
       .col-md-4(data-aos="fade-left")
         figure
@@ -315,7 +312,7 @@
         .tarjeta.clr-1
           h4.text-center.p-2 Norma ISO/IEC 27001:2013:
 
-    p.mb-4(data-aos="fade-right") Ahora bien, para cumplir con estos tres pilares se hace necesario de acciones, y aquí es donde han surgido algunas buenas iniciativas como normatividad, estándares y buenas prácticas para una adecuada gestión de la información, entre las cuales poder revisar:
+    p.mb-4(data-aos="fade-right") Esta norma nos brinda los lineamientos para la adopción de Sistemas de Gestión de la Seguridad de la Información SGSI, que buscan consolidarse como estrategias corporativas para la seguridad de la información a partir de los siguientes principios. 
 
     .row.justify-content-center.align-items-center.mb-4
       .col-lg-10.position-relative
@@ -523,7 +520,6 @@
           .col-md-6.mb-4.mb-md-0
             h4 Procedimientos de control de cambios
             p.mb-4 Cualquier cambio realizado en un sistema puede afectarlo negativamente, se sugieren una serie de recomendaciones para la gestión del control de cambios.
-            p.mb-4 Para conocer una serie de recomendaciones para la gestión del control de cambios, haz clic en el botón
             ol.lista-ol.ps-3
               li 
                 span.text-bold a. 
@@ -569,7 +565,6 @@
           .col-md-6.mb-4.mb-md-0
             h4 Gestión de vulnerabilidades
             p.mb-4 Se deben adoptar mecanismos y planes para la gestión de vulnerabilidades en cualquier desarrollo o cambio realizado.
-            p.mb-3 Haz clic en el botón Ver más, para conocer qué se debe hacer antes de ser puesto en producción.
             ol.lista-ol.ps-3
               li 
                 span.text-bold a. 
